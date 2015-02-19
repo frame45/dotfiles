@@ -88,6 +88,7 @@ fi
 alias ll='ls -hl'
 alias la='ls -A'
 alias l='ls -CF'
+alias lh='ls -alh'
 alias clipkey='xclip -sel clip < ~/.ssh/id_rsa.pub'
 
 # Add an "alert" alias for long running commands.  Use like so:
@@ -102,6 +103,9 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+# set prompt
+export PS1="\[\e[00;31m\]\u\[\e[0m\]\[\e[00;37m\]@\[\e[0m\]\[\e[00;36m\]\h\[\e[0m\]\[\e[00;37m\]:\[\e[0m\]\[\e[00;32m\][\w]\\$\[\e[0m\]\[\e[00;37m\] \[\e[0m\]"
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
