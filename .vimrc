@@ -14,7 +14,7 @@ set incsearch
 set hlsearch
 set vb
 nmap <leader>l :set list!<CR>
-set listchars=tab:▸\ ,eol:¬,nbsp:• 
+set listchars=tab:▸\ ,nbsp:• 
 set list
 
 "Invisible character colors
