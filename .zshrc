@@ -22,6 +22,8 @@ plugins=(
   zsh-autosuggestions
 )
 
+POWERLEVEL9K_MODE='nerdfont-complete'
+
 source $ZSH/oh-my-zsh.sh
 
 # --------------------
